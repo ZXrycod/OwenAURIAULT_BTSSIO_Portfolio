@@ -22,15 +22,7 @@ export const timelineEvents: TimelineEvent[] = [
     description: 'Développement d\'une application web complète pour la gestion de taxis conventionnés.',
     date: '2023',
     icon: '🚕',
-    type: 'quest',
-  },
-  {
-    id: 'cevrikdussaud',
-    title: 'Site CevrikDussaud',
-    description: 'Création d\'une plateforme e-commerce avec intégration Stripe et génération PDF.',
-    date: '2023',
-    icon: '🛒',
-    type: 'quest',
+    type: 'achievement',
   },
   {
     id: 'ims-stage',
@@ -46,7 +38,7 @@ export const timelineEvents: TimelineEvent[] = [
     description: 'Maîtrise d\'API Platform, JWT, et architectures microservices.',
     date: '2024',
     icon: '⚙️',
-    type: 'quest',
+    type: 'achievement',
   },
   {
     id: 'rag-chatbot',
@@ -54,7 +46,7 @@ export const timelineEvents: TimelineEvent[] = [
     description: 'Création d\'un chatbot intelligent avec MistralAI et architecture RAG.',
     date: '2024',
     icon: '🤖',
-    type: 'quest',
+    type: 'achievement',
   },
   {
     id: 'docker-mastery',
@@ -65,11 +57,19 @@ export const timelineEvents: TimelineEvent[] = [
     type: 'achievement',
   },
   {
+    id: 'cevrikdussaud',
+    title: 'Site CevrikDussaud',
+    description: 'Création d\'une plateforme e-commerce avec intégration Stripe et génération PDF.',
+    date: '2023',
+    icon: '🛒',
+    type: 'quest',
+  },
+  {
     id: 'final-quest',
-    title: 'Fin du BTS – Dernière Quête',
+    title: 'Fin du BTS – Dernière Quête (Encore quelques mois...)',
     description: 'Achèvement du BTS SIO SLAM. Début d\'une nouvelle aventure professionnelle.',
-    date: '2025',
+    date: '2026 ?',
     icon: '👑',
-    type: 'achievement',
+    type: 'quest',
   },
 ];

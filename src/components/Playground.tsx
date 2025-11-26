@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import MarkdownEditor from './playground/MarkdownEditor';
 import QRGenerator from './playground/QRGenerator';
-import SnakeGame from './playground/SnakeGame';
 
 export default function Playground() {
   return (
@@ -32,14 +31,6 @@ export default function Playground() {
             viewport={{ once: true }}
           >
             <QRGenerator />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <SnakeGame />
           </motion.div>
         </div>
       </div>

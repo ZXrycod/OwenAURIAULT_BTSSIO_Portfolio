@@ -49,7 +49,13 @@ export default function Navbar() {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => {
+                    if (item.id === 'playground') {
+                      window.location.href = '/playground';
+                    } else {
+                      scrollToSection(item.id);
+                    }
+                  }}
                   className="text-gray-300 hover:text-[#0099ff] px-3 py-2 text-sm font-medium transition-colors"
                 >
                   {item.label}

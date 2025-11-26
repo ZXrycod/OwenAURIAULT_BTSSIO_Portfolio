@@ -6,23 +6,19 @@ interface IntroProps {
 }
 
 export default function Intro({ onComplete }: IntroProps) {
-  const [hasPlayed, setHasPlayed] = useState(false);
 
   useEffect(() => {
-    if (!hasPlayed) {
-      setHasPlayed(true);
-      const timer = setTimeout(() => {
-        onComplete();
-      }, 3000);
-      return () => clearTimeout(timer);
-    }
-  }, [hasPlayed, onComplete]);
+    const timer = setTimeout(() => {
+      onComplete();
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, [onComplete]);
 
   return (
     <motion.div
       initial={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.5, delay: 2.8 }}
+      transition={{ duration: 0.6 }}
       className="fixed inset-0 z-50 bg-black flex flex-col items-center justify-center"
     >
       <div className="absolute inset-0 overflow-hidden">
