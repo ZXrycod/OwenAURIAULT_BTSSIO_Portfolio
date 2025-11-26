@@ -20,13 +20,21 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-4">Navigation</h3>
             <ul className="space-y-2">
-              {['Accueil', 'À propos', 'Projets', 'Expérience', 'Contact'].map((item) => (
-                <li key={item}>
+              {[
+                { label: 'Accueil', id: 'hero' },
+                { label: 'À propos', id: 'about' },
+                { label: 'Projets', id: 'projets' },
+                { label: 'Timeline', id: 'timeline' },
+                { label: 'Playground', id: 'playground' },
+                { label: 'Expérience', id: 'experience' },
+                { label: 'Contact', id: 'contact' },
+              ].map((item) => (
+                <li key={item.id}>
                   <a
-                    href={`#${item.toLowerCase().replace('à propos', 'about').replace('accueil', 'hero').replace('expérience', 'experience')}`}
+                    href={`#${item.id}`}
                     className="text-gray-400 hover:text-[#0099ff] transition-colors text-sm"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}

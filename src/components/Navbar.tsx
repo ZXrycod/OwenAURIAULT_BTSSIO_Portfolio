@@ -21,6 +21,16 @@ export default function Navbar() {
     }
   };
 
+  const navItems = [
+    { label: 'Accueil', id: 'hero' },
+    { label: 'À propos', id: 'about' },
+    { label: 'Projets', id: 'projets' },
+    { label: 'Timeline', id: 'timeline' },
+    { label: 'Playground', id: 'playground' },
+    { label: 'Expérience', id: 'experience' },
+    { label: 'Contact', id: 'contact' },
+  ];
+
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${
@@ -36,13 +46,13 @@ export default function Navbar() {
 
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              {['Accueil', 'À propos', 'Projets', 'Expérience', 'Contact'].map((item) => (
+              {navItems.map((item) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(item.toLowerCase().replace('à propos', 'about').replace('accueil', 'hero').replace('expérience', 'experience'))}
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
                   className="text-gray-300 hover:text-[#0099ff] px-3 py-2 text-sm font-medium transition-colors"
                 >
-                  {item}
+                  {item.label}
                 </button>
               ))}
             </div>
@@ -62,13 +72,13 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-sm">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {['Accueil', 'À propos', 'Projets', 'Expérience', 'Contact'].map((item) => (
+            {navItems.map((item) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item.toLowerCase().replace('à propos', 'about').replace('accueil', 'hero').replace('expérience', 'experience'))}
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
                 className="text-gray-300 hover:text-[#0099ff] block px-3 py-2 text-base font-medium w-full text-left"
               >
-                {item}
+                {item.label}
               </button>
             ))}
           </div>
