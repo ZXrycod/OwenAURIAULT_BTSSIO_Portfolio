@@ -13,6 +13,10 @@ const skills = [
   { name: 'Docker', category: 'DevOps' },
   { name: 'Stripe', category: 'API' },
   { name: 'API Platform', category: 'Backend' },
+  { name: 'GitHub', category: 'DevOps' },
+  { name: 'GitLab', category: 'DevOps' },
+  { name: 'WordPress', category: 'CMS' },
+  { name: 'Zend Framework', category: 'Backend' },
 ];
 
 const features = [

@@ -26,7 +26,7 @@ export default function Hero() {
             Étudiant BTS SIO SLAM – 2<sup>ᵉ</sup> année
           </p>
           <p className="text-lg md:text-xl text-[#0099ff] font-medium">
-            Développeur Web & Logiciel
+            Développeur Web & Logiciel & Entrepreneur
           </p>
         </div>
 

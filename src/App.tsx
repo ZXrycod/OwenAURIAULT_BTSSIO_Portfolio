@@ -10,9 +10,11 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import AIChat from './components/AIChat';
+import Competences from './components/Competences';
 import AudioToggle from './components/AudioToggle';
 import { Routes, Route } from 'react-router-dom';
 import PagePlayground from './pages/playground';
+
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -27,7 +29,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/playground" element={<PagePlayground />} />
+      {/*<Route path="/playground" element={<PagePlayground />} />*/}
 
       <Route path="/" element={
         <AnimatePresence>
@@ -37,6 +39,8 @@ function App() {
               <Navbar />
               <Hero />
               <About />
+              {/*Rajouter une intergration d'un google spreadsheet pour les competences avec un boutton telecharger*/}
+              <Competences />
               <Projects />
               <Timeline />
               <Experience />
