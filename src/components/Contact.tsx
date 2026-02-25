@@ -68,7 +68,7 @@ export default function Contact() {
             <div className="bg-gradient-to-br from-[#0099ff]/20 to-blue-500/20 p-8 rounded-xl border border-[#0099ff]/30">
               <h4 className="text-xl font-bold text-white mb-4">Disponibilité</h4>
               <p className="text-gray-300 mb-4">
-                Je suis actuellement disponible pour des missions freelance et des stages.
+                Je suis actuellement disponible pour des missions freelance et des offres d'alternance.
               </p>
               <p className="text-[#0099ff] font-semibold">
                 Réponse sous 24-48h
