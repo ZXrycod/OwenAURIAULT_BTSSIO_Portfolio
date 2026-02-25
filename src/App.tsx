@@ -13,7 +13,6 @@ import AIChat from './components/AIChat';
 import Competences from './components/Competences';
 import AudioToggle from './components/AudioToggle';
 import { Routes, Route } from 'react-router-dom';
-import PagePlayground from './pages/playground';
 
 
 function App() {
@@ -29,8 +28,6 @@ function App() {
 
   return (
     <Routes>
-      {/*<Route path="/playground" element={<PagePlayground />} />*/}
-
       <Route path="/" element={
         <AnimatePresence>
           {showIntro && <Intro onComplete={() => setShowIntro(false)} />}
@@ -39,7 +36,6 @@ function App() {
               <Navbar />
               <Hero />
               <About />
-              {/*Rajouter une intergration d'un google spreadsheet pour les competences avec un boutton telecharger*/}
               <Competences />
               <Projects />
               <Timeline />
