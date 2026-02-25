@@ -23,10 +23,10 @@ export default function Hero() {
           </h1>
           <div className="h-1 w-32 bg-[#0099ff] mx-auto mb-6"></div>
           <p className="text-xl md:text-2xl text-gray-300 mb-4">
-            Étudiant BTS SIO SLAM – 2<sup>ᵉ</sup> année
+            Étudiant BTS SIO SLAM – 2<sup>ᵉ</sup> année & Entrepreneur
           </p>
           <p className="text-lg md:text-xl text-[#0099ff] font-medium">
-            Développeur Web & Logiciel & Entrepreneur
+            Développeur Web & Logiciel
           </p>
         </div>
 
