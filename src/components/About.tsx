@@ -1,4 +1,5 @@
 import { Code, Database, Globe, Zap } from 'lucide-react';
+import photoDev from '../assets/photo_dev.jpg';
 
 const skills = [
   { name: 'Symfony', category: 'Backend' },
@@ -64,12 +65,23 @@ export default function About() {
               j'accompagne mes clients de l'audit initial jusqu'à la maintenance, en passant par la production
               et l'optimisation SEO.
             </p>
-            <p className="text-gray-300 text-lg leading-relaxed">
+            {/*<p className="text-gray-300 text-lg leading-relaxed">
               Mon approche combine expertise technique, sens du design et compréhension des besoins métiers
               pour créer des solutions digitales sur mesure.
-            </p>
+            </p>*/}
+
+            <div className="relative group mt-4">
+              <img
+                src={photoDev}
+                alt="photo de développement"
+                className="w-full h-auto rounded-2xl border-2 border-[#0099ff]/40 shadow-lg shadow-[#0099ff]/20 object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              {/* Overlay au survol */}
+              <div className="absolute inset-0 rounded-2xl bg-[#0099ff]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            </div>
           </div>
 
+          {/* Cartes de features */}
           <div className="grid grid-cols-2 gap-6">
             {features.map((feature, index) => (
               <div

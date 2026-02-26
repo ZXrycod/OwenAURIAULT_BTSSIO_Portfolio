@@ -18,12 +18,28 @@ const experiences = [
   },
   {
     icon: Briefcase,
+    title: 'Stage NTConseil – Actunet',
+    role: 'Développeur Stagiaire',
+    period: 'Janv. – Fév. 2026',
+    location: 'Angoulême',
+    description: [
+      'Amélioration du système d\'importation d\'images du site Ordigreen (PHP, JS, AJAX) : automatisation et refonte de l\'interface',
+      'Développement d\'une plateforme de reporting avec Zend Framework : suivi des contrats, saisie des tâches, gestion du temps et génération de statistiques',
+      'Participation à une réponse à un appel d\'offre : conception d\'une charte graphique',
+      'Création du site web d\'une ferme (rédaction des contenus, structuration du projet)',
+      'Développement de sites WordPress à partir de maquettes clients (designer, architecte d\'intérieur)',
+      'Contact direct avec les clients : analyse des besoins et accompagnement'
+    ],
+    color: 'bg-blue-500'
+  },
+  {
+    icon: Briefcase,
     title: 'Stage IMS Bordeaux',
     role: 'Développeur Stagiaire',
     period: '2024',
     location: 'Bordeaux',
     description: [
-      'Développement site de publication de recherches',
+      'Développement d\'un site de publication de recherches scientifiques',
       'Travail en équipe sur architecture Symfony',
       'Gestion de base de données MySQL',
       'Tests et déploiement en environnement de production'
