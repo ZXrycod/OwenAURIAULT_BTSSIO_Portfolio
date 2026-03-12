@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
-import Timeline from './components/Timeline';
+import StatsDocs from './components/StatsDocs';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -38,8 +38,8 @@ function App() {
               <About />
               <Competences />
               <Projects />
-              <Timeline />
               <Experience />
+              <StatsDocs />
               <Contact />
               <Footer />
               <AIChat />
