@@ -25,9 +25,9 @@ export default function Navbar() {
     { label: 'Accueil', id: 'hero' },
     { label: 'À propos', id: 'about' },
     { label: 'Projets', id: 'projets' },
-    { label: 'Timeline', id: 'timeline' },
     //{ label: 'Playground', id: 'playground' },
     { label: 'Expérience', id: 'experience' },
+    { label: 'Documentation', id: 'statsdocs' },
     { label: 'Contact', id: 'contact' },
   ];
 
