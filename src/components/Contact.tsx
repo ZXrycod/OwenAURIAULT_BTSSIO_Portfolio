@@ -1,25 +1,6 @@
-import { useState } from 'react';
-import { Mail, MapPin, Phone, Send } from 'lucide-react';
+import { Mail, MapPin, Phone } from 'lucide-react';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    nom: '',
-    email: '',
-    message: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const mailtoLink = `mailto:owen.auriault@gmail.com?subject=Contact depuis le portfolio&body=Nom: ${formData.nom}%0D%0AEmail: ${formData.email}%0D%0A%0D%0AMessage:%0D%0A${formData.message}`;
-    window.location.href = mailtoLink;
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
 
   return (
     <section id="contact" className="py-20 bg-black">
