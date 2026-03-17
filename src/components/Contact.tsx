@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, MapPin, Send } from 'lucide-react';
+import { Mail, MapPin, Phone, Send } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -43,6 +43,16 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-4 text-gray-300">
                   <div className="w-12 h-12 bg-[#0099ff]/20 rounded-lg flex items-center justify-center">
+                    <Phone className="w-6 h-6 text-[#0099ff]" />
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-400">Téléphone</p>
+                    <p className="text-white">06 69 60 22 18</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4 text-gray-300">
+                  <div className="w-12 h-12 bg-[#0099ff]/20 rounded-lg flex items-center justify-center">
                     <Mail className="w-6 h-6 text-[#0099ff]" />
                   </div>
                   <div>
@@ -64,75 +74,18 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-
-            <div className="bg-gradient-to-br from-[#0099ff]/20 to-blue-500/20 p-8 rounded-xl border border-[#0099ff]/30">
-              <h4 className="text-xl font-bold text-white mb-4">Disponibilité</h4>
-              <p className="text-gray-300 mb-4">
-                Je suis actuellement disponible pour des missions freelance et des offres d'alternance.
-              </p>
-              <p className="text-[#0099ff] font-semibold">
-                Réponse sous 24-48h
-              </p>
-            </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            <div>
-              <label htmlFor="nom" className="block text-sm font-medium text-gray-300 mb-2">
-                Nom complet
-              </label>
-              <input
-                type="text"
-                id="nom"
-                name="nom"
-                value={formData.nom}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#0099ff] transition-colors"
-                placeholder="Votre nom"
-              />
-            </div>
+          <div className="bg-gradient-to-br from-[#0099ff]/20 to-blue-500/20 p-8 rounded-xl border border-[#0099ff]/30">
+            <h4 className="text-xl font-bold text-white mb-4">Disponibilité</h4>
+            <p className="text-gray-300 mb-4">
+              Je suis actuellement disponible pour des missions freelance et des offres d'alternance.
+            </p>
+            <p className="text-[#0099ff] font-semibold">
+              Réponse sous 24-48h
+            </p>
+          </div>
 
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#0099ff] transition-colors"
-                placeholder="votre@email.com"
-              />
-            </div>
-
-            <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                required
-                rows={6}
-                className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-[#0099ff] transition-colors resize-none"
-                placeholder="Votre message..."
-              />
-            </div>
-
-            <button
-              type="submit"
-              className="w-full px-8 py-4 bg-[#0099ff] text-white rounded-lg font-semibold hover:bg-[#0088ee] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#0099ff]/50 flex items-center justify-center space-x-2"
-            >
-              <span>Envoyer le message</span>
-              <Send className="w-5 h-5" />
-            </button>
-          </form>
         </div>
       </div>
     </section>

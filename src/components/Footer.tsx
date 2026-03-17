@@ -24,7 +24,7 @@ export default function Footer() {
                 { label: 'Accueil', id: 'hero' },
                 { label: 'À propos', id: 'about' },
                 { label: 'Projets', id: 'projets' },
-                { label: 'Timeline', id: 'timeline' },
+                { label: 'Documentation', id: 'statsdocs' },
                 //{ label: 'Playground', id: 'playground' },
                 { label: 'Expérience', id: 'experience' },
                 { label: 'Contact', id: 'contact' },
