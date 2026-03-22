@@ -7,18 +7,21 @@ Il présente mes compétences, mon parcours, mes réalisations et mon activité 
 
 ## ✨ Fonctionnalités
 
-- **Intro animée** — écran de chargement avec animation à l'arrivée
-- **Navbar** responsive avec navigation par ancres
-- **Hero** — présentation rapide (nom, titre, description)
-- **About** — présentation détaillée & technologies maîtrisées
-- **Compétences** — tableau Google Sheets intégré en temps réel (iframe) avec téléchargement `.xlsx`
-- **Projets** — carte de projets réalisés
-- **Timeline** — parcours scolaire et professionnel
-- **Expérience** — détail des expériences professionnelles
-- **Contact** — formulaire de contact (intégré avec Supabase)
-- **AI Chat** — chat IA intégré
-- **Audio Toggle** — toggle de son d'ambiance
-- **Footer** — liens et informations
+| Section | Description |
+|---|---|
+| **Intro** | Écran de chargement animé à l'ouverture du site |
+| **Navbar** | Navigation responsive par ancres |
+| **Hero** | Présentation rapide : nom, titre, description |
+| **About** | Présentation détaillée & technologies maîtrisées |
+| **Compétences** | Tableau Google Sheets intégré en temps réel (iframe) avec téléchargement `.xlsx` |
+| **Projets** | Cartes de projets réalisés avec détails |
+| **Expérience** | Détail des expériences professionnelles |
+| **Stats & Docs** | Statistiques de développement et documents téléchargeables (attestations, etc.) |
+| **Contact** | Formulaire de contact intégré avec Supabase |
+| **AI Chat** | Assistant IA intégré avec réponses contextuelles |
+| **Playground** | Espace de démonstration interactif |
+| **Audio Toggle** | Bouton de toggle pour le son d'ambiance |
+| **Footer** | Liens sociaux et informations de contact |
 
 ---
 
@@ -40,27 +43,41 @@ Il présente mes compétences, mon parcours, mes réalisations et mon activité 
 ## 📁 Structure du projet
 
 ```
-src/
-├── components/
-│   ├── About.tsx          # Section "À propos"
-│   ├── AIChat.tsx         # Chat IA intégré
-│   ├── AudioToggle.tsx    # Toggle son d'ambiance
-│   ├── Competences.tsx    # Viewer Google Sheets
-│   ├── Contact.tsx        # Formulaire de contact
-│   ├── Experience.tsx     # Expériences professionnelles
-│   ├── Footer.tsx         # Pied de page
-│   ├── Hero.tsx           # Section d'accueil
-│   ├── Intro.tsx          # Écran d'introduction animé
-│   ├── Navbar.tsx         # Barre de navigation
-│   ├── ProjectCard.tsx    # Carte d'un projet
-│   ├── Projects.tsx       # Section projets
-│   └── Timeline.tsx       # Parcours / timeline
-├── data/                  # Données statiques (projets, timeline…)
-├── pages/                 # Pages supplémentaires
-├── utils/                 # Fonctions utilitaires
-├── App.tsx                # Composant racine & routing
-├── main.tsx               # Point d'entrée
-└── index.css              # Styles globaux
+OwenAURIAULT_BTSSIO_Portfolio/
+├── public/                    # Fichiers statiques publics
+├── src/
+│   ├── assets/                # Images et médias
+│   ├── components/
+│   │   ├── About.tsx          # Section "À propos"
+│   │   ├── AIChat.tsx         # Chat IA avec réponses contextuelles
+│   │   ├── AudioToggle.tsx    # Toggle son d'ambiance
+│   │   ├── Competences.tsx    # Viewer Google Sheets (tableau de compétences)
+│   │   ├── Contact.tsx        # Formulaire de contact (Supabase)
+│   │   ├── Experience.tsx     # Expériences professionnelles
+│   │   ├── Footer.tsx         # Pied de page
+│   │   ├── Hero.tsx           # Section d'accueil
+│   │   ├── Intro.tsx          # Écran d'introduction animé
+│   │   ├── Navbar.tsx         # Barre de navigation
+│   │   ├── Playground.tsx     # Espace de démonstration
+│   │   ├── ProjectCard.tsx    # Carte d'un projet
+│   │   ├── Projects.tsx       # Section projets
+│   │   ├── StatsDocs.tsx      # Stats de dev & documents téléchargeables
+│   │   └── playground/        # Sous-composants du playground
+│   ├── data/
+│   │   ├── aiResponses.ts     # Réponses pré-définies pour l'IA
+│   │   ├── projects.ts        # Données des projets
+│   │   └── StatsDocs.ts       # Données stats & documents
+│   ├── pages/
+│   │   └── playground.tsx     # Page playground
+│   ├── utils/                 # Fonctions utilitaires
+│   ├── App.tsx                # Composant racine & routing
+│   ├── main.tsx               # Point d'entrée React
+│   └── index.css              # Styles globaux
+├── index.html                 # Template HTML principal
+├── vite.config.ts             # Configuration Vite
+├── tailwind.config.js         # Configuration TailwindCSS
+├── tsconfig.json              # Configuration TypeScript
+└── package.json               # Dépendances & scripts
 ```
 
 ---
@@ -104,8 +121,24 @@ L'application sera disponible sur [http://localhost:5173](http://localhost:5173)
 
 ## 📊 Tableau de compétences (Google Sheets)
 
-La section **Compétences** affiche un tableau Google Sheets publié en lecture seule.  
-Il est mis à jour automatiquement dès que le document source est modifié.
+La section **Compétences** affiche un tableau Google Sheets publié en lecture seule via une `<iframe>`.  
+Il se met à jour automatiquement dès que le document source est modifié.  
+Un bouton permet de télécharger le fichier `.xlsx` directement.
+
+---
+
+## 🤖 Chat IA
+
+L'assistant IA intégré répond à des questions sur le portfolio (compétences, projets, contact…).  
+Les réponses sont définies statiquement dans `src/data/aiResponses.ts` et adaptées au contexte du profil.
+
+---
+
+## 📑 Stats & Documents
+
+La section **Stats & Docs** regroupe :
+- Des statistiques sur l'activité de développement
+- Des documents téléchargeables (attestations de stage, certifications, etc.)
 
 ---
 
