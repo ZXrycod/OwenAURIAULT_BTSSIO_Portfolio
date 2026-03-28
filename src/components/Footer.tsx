@@ -24,9 +24,9 @@ export default function Footer() {
                 { label: 'Accueil', id: 'hero' },
                 { label: 'À propos', id: 'about' },
                 { label: 'Projets', id: 'projets' },
-                { label: 'Documentation', id: 'statsdocs' },
                 //{ label: 'Playground', id: 'playground' },
                 { label: 'Expérience', id: 'experience' },
+                { label: 'Documentation', id: 'statsdocs' },
                 { label: 'Contact', id: 'contact' },
               ].map((item) => (
                 <li key={item.id}>
@@ -45,7 +45,7 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Réseaux</h3>
             <div className="flex space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/ZXrycod"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#0099ff] hover:bg-gray-700 transition-all"
@@ -53,7 +53,7 @@ export default function Footer() {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/owen-auriault-4ba252399/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-[#0099ff] hover:bg-gray-700 transition-all"
