@@ -13,7 +13,7 @@ export const projects: Project[] = [
     nom: "OptimizTaxi",
     description: "Application web complète pour la gestion de taxis conventionnés. Gestion des courses, des patients, facturation automatique et suivi en temps réel.",
     technos: ["Symfony", "PHP", "MySQL", "JavaScript", "Bootstrap"],
-    images: ["https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=800"]
+    images: ["/images/OptimizTaxi.png"]
   },
   {
     id: "cevrikdussaud",
@@ -27,21 +27,21 @@ export const projects: Project[] = [
     nom: "SportAutoOcean",
     description: "Plateforme dédiée aux rallyes automobiles. Interface moderne et responsive pour consultation des événements, inscriptions et résultats.",
     technos: ["React", "TailwindCSS", "TypeScript", "API REST"],
-    images: ["https://images.pexels.com/photos/12789139/pexels-photo-12789139.jpeg?auto=compress&cs=tinysrgb&w=800"]
+    images: ["/images/SportAutoOcean.png"]
   },
   {
     id: "ims",
     nom: "Projet IMS",
     description: "Site de publication et consultation de recherches scientifiques. Système de gestion de contenu, authentification et recherche avancée.",
     technos: ["Symfony", "MySQL", "JavaScript", "Bootstrap"],
-    images: ["https://images.pexels.com/photos/256514/pexels-photo-256514.jpeg?auto=compress&cs=tinysrgb&w=800"]
+    images: ["/images/IMS.png"]
   },
   {
     id: "api-symfony",
     nom: "APIs Symfony",
     description: "Développement d'APIs RESTful avec API Platform. Documentation Swagger, authentification JWT, tests unitaires.",
     technos: ["Symfony", "API Platform", "JWT", "PostgreSQL"],
-    images: ["https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800"]
+    images: ["/images/APIs.png"]
   },
   {
     id: "chatbot-rag",
