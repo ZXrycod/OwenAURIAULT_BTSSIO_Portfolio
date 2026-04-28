@@ -92,6 +92,6 @@ export const projects: Project[] = [
     description: "L’application “Découvrez la Charente” a pour but de centraliser et rendre accessibles les lieux touristiques locaux tout en permettant aux utilisateurs de découvrir, planifier et partager des visites de manière interactive, même hors connexion.",
     technos: ["Java", "Android", "Google Maps API", "RecyclerView"],
     lien: "https://gitlab.lev-btssio.fr/owen.auriault/app-decouvrir-la-charente.git",
-    images: ["/images/SynchroDrop.png"]
+    images: ["/images/Charente.png"]
   },
 ];
